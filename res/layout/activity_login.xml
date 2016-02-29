@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Login" >
+
+    <TextView
+        android:id="@+id/LoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username" />
+
+     <Button
+         android:id="@+id/Loginbutton"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="74dp"
+         android:text="Login"
+         android:onClick="Overview"/>
+
+     <TextView
+         android:id="@+id/PasswordTitle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/PasswordText"
+         android:layout_below="@+id/LoginText"
+         android:layout_marginTop="40dp"
+         android:text="Password" />
+
+     <EditText
+         android:id="@+id/LoginText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/LoginTitle"
+         android:layout_below="@+id/LoginTitle"
+         android:layout_marginTop="18dp"
+         android:ems="10"
+         android:inputType="text" />
+     <requestFocus />
+
+     <EditText
+         android:id="@+id/PasswordText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/LoginText"
+         android:layout_below="@+id/PasswordTitle"
+         android:layout_marginTop="21dp"
+         android:ems="10"
+         android:inputType="textPassword" >
+
+     </EditText>
+    
+</RelativeLayout>
